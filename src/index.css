@@ -11,3 +11,172 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* NavigationBar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #04aa6d;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    padding: 0.8rem;
+    width: 100%;
+    display: block;
+  }
+}
+/* ToDoApp */
+
+.TodoApp-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.TodoApp-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.TodoApp-inputs {
+  display: flex;
+  align-items: center;
+}
+
+.TodoApp-input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.TodoApp-button {
+  padding: 10px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.TodoApp-button:hover {
+  background-color: #004494;
+}
+
+.TodoApp-search {
+  margin-bottom: 20px;
+}
+
+.TodoApp-search-input {
+  width: calc(100% - 90px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.TodoApp-search-button {
+  padding: 10px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.TodoApp-search-button:hover {
+  background-color: #004494;
+}
+
+.TodoApp-todos {
+  margin-top: 20px;
+}
+
+.TodoApp-no-match {
+  text-align: center;
+  color: #999;
+}
+
+/* About */
+
+.About-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.card p strong {
+  margin-right: 5px;
+  font-weight: bold;
+}
